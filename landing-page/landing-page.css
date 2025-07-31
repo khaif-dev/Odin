@@ -1,0 +1,84 @@
+.topnav{
+  display: flex;
+  justify-content: space-around;
+  background-color: bisque;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.topnav a {
+  display: flexbox;
+}
+.topnav img{
+height: 50px ;
+}
+
+.hero{
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+  gap: 50px;
+}
+.hero text{
+  
+}
+.hero img{
+  height: 400px;
+  border-radius: 10px;
+}
+
+.hero button{
+  background-color: #3882F6;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.package{
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  margin: 10px 100px;
+}
+.section-head{
+  text-align: center;
+  margin-bottom: 10px;
+}
+.bronze{
+  display: flexbox;
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 200px;
+  flex: 1;
+}
+.silver{
+  display: flexbox;
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 200px;
+  flex: 1;
+}
+.gold{
+  display: flexbox;
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 200px;
+  flex: 1;
+}
+.platinum{
+  display: flexbox;
+  border: 2px solid black;
+  border-radius: 5px;
+  height: 200px;
+  flex: 1;
+}
+.testimonial{
+  display: flexbox;
+  height: 200px;
+  margin: 10px 100px ;
+}
+.testimonial p{
+  padding: 20px;
+
+}

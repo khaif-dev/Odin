@@ -1,0 +1,69 @@
+body{
+  background-image: ;
+}
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  width: 306px; 
+  margin: 20px auto;
+}
+
+.square{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 2rem;
+  border-collapse: collapse;
+  border-radius: 5px;
+  font-size: 100px;
+  color: red
+  box-sizing: border-box; /*ensure the squares fit in the grid */
+}
+
+.players{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.player1{
+  margin-right: 5px;
+}
+
+.btns{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.startBtn{
+  margin-right: 4px;
+  border-radius: 10px;
+  background-color: green;
+  padding: 5px 5px;
+  color: white;
+}
+.restartBtn{
+  border-radius: 10px;
+  background-color: orange;
+  padding: 5px 5px;
+  color: white;
+}
+
+.message{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px auto;
+  justify-content: center;
+  font-size: 40px;
+}
+
+
+
+
+
+
+

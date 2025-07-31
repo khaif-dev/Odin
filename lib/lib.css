@@ -1,0 +1,152 @@
+body{
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+}
+
+.header{
+  background-color: teal;
+  max-width: 100%;
+  height: 50px;
+  text-align: center; 
+  margin-top: 0%;
+}
+.header-txt{
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.bg-img{
+  width: 100%;
+  display: flex;
+  height: auto;
+}
+.addBtn{
+  position: absolute;
+  display: block;
+  background-color: #0d6efd;
+  text-align: center;
+  top: 10%;
+  left: 50%;
+  padding: 10px 10px;
+  font-size: 20px;
+  color: white;
+  border-radius: 40px;
+}
+
+.addBtn:hover{
+  background-color: #0d2efd;
+}
+
+.form-container{
+  display: none;
+  z-index: 1000;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  width: 400px;
+  height: 450px;
+  position: absolute;
+  left: 40%;
+  top: 30%;
+  border-radius: 10px;
+  border: black;
+  
+  justify-content: center;
+  align-content: center;
+
+}
+.form-label{
+  color: white; 
+  padding: 5px 5px;
+  display: flex;
+  
+}
+.form-container h5{
+  text-align: center;
+  color: white;
+}
+
+.book-input{
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+  height: 30px;
+  color: black;
+  }
+
+  .status-sect{
+    padding: 10px 10px ;
+    color: white;
+    font-weight: bold;
+  }
+
+  .submitBtn{
+    margin-left: 100px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+  }
+
+   .cancelBtn{
+    padding: 5px 5px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+  }
+
+  .cardContainer{
+  display: none;
+  flex-wrap: wrap; /*allows card to flow to next row when initial is full*/
+  background-color: transparent;
+  backdrop-filter: blur(2px);
+  width: 98%;
+  height: auto;
+  min-height: 100%; 
+  position: absolute;
+  top: 18%;
+  margin-left: 1%;
+  border-radius: 10px;
+  border: white;
+  border-style: double;
+  justify-content: center;
+  
+}
+
+.bookCard{
+  display: block;
+  background-color: powderblue;
+  width: 20%;
+  height: 20%;
+  border-radius: 5px;
+  margin-top: 2%;
+  margin-left:2%; 
+  margin-right: 2%;
+  margin-bottom: 2%; 
+  padding: 5px 15px;
+}
+
+.bookCard h6 {
+color: black;
+text-align: center;
+}
+
+.removeBtn{
+  background-color: red;
+  color: white;
+  margin-left: 50px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.toggleRead{
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+
