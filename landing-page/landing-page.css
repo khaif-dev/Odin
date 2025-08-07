@@ -1,84 +1,191 @@
-.topnav{
+* {
+  font-family: Roboto;
+  margin: 0;
+}
+
+header {
+  background-color: #1F2937;
+  height: 50vh;
+  display: flex;
+  flex-direction: column; /*stack items vertically allowing for 2 rows*/
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around; /*The space is evenly distributed around all items.
+  Half the space is on the outside edges (left of first, right of last)*/
+  /* justify-content: space-between; The first item is pushed all the way to the start (left).
+  The last item is pushed all the way to the end (right). */
+  padding: 12px;
+}
+
+.logo {
+  display: flexbox;
+  font-size: 24px;
+  color: #f9faf8;
+}
+.navigation a {
+  display: flexbox;
+  font-size: 18px;
+  text-decoration: none;
+  color: #E5E7EB;
+}
+.hero {
   display: flex;
   justify-content: space-around;
-  background-color: bisque;
-  padding: 10px;
-  z-index: 1000;
+  margin-top: 50px;
 }
-
-.topnav a {
+.hero-text {
   display: flexbox;
+  width: 500px; 
+  padding: 10px;
 }
-.topnav img{
-height: 50px ;
+.hero-text h2 {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
 }
-
-.hero{
-  display: flex;
-  justify-content: space-between;
-  margin: 50px;
-  gap: 50px;
-}
-.hero text{
+.hero-text p {
+  font-size: 18px;
+  color: #E5E7EB;
   
 }
-.hero img{
-  height: 400px;
-  border-radius: 10px;
+.hero-text button {
+  background-color: #3882f6;
+  border: none;
+  border-radius: 5px;
+  color: #f9faf8;
+  padding: 5px;
+  font-size: 15px;
+}
+.hero-img {
+  width: 500px;
+  height: 200px;
+  display: flexbox;
+
+  border-radius: 5px;
+}
+.hero-img img {
+  width: 500px;
+  height: 200px;  
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  text-align: center;
 }
 
-.hero button{
-  background-color: #3882F6;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-}
-.package{
+.product-head {
   display: flex;
-  gap: 20px;
-  justify-content: space-around;
-  margin: 10px 100px;
+  /* align-items: center; centers items in flex verticaly */
+  justify-content: center;
 }
-.section-head{
+.product-head h2{
+  font-size: 36px;
+  color: #1F2937;
+  font-weight: 900; 
+}
+.package {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.bronze {
+  border: 1px solid #3882f6;
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
+  
+}
+.silver {
+  border: 1px solid #3882f6;
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
+}
+.gold {
+  border: 1px solid #3882f6;
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
+}
+
+.platinum {
+  border: 1px solid #3882f6;
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
+}
+.feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #E5E7EB;
+  height: 40vh;
   text-align: center;
-  margin-bottom: 10px;
 }
-.bronze{
-  display: flexbox;
-  border: 2px solid black;
+.feedback h2 {
+  font-size: 36px;
+  font-weight: 900;
+}
+.feedback p {
+  font-size: 18px;
+  font-weight: lighter;
+  font-style: italic;
+  width: 600px;
+  
+}
+.cfa{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40vh;
+}
+.signup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3882f6;
+  color: #E5E7EB;
+  width: 60%;
+  height: 15vh;
   border-radius: 5px;
-  height: 200px;
-  flex: 1;
+  padding: 12px;
 }
-.silver{
+.cfa-text {
   display: flexbox;
-  border: 2px solid black;
+  justify-content: space-around;
+}
+.cfa-text h4 {
+  font-size: 24px;
+  font-weight: 800;
+}
+.cfa-text p {
+  font-size: 18px;
+  font-weight: lighter;
+}
+.cfa-button button {
+  background-color: #3882f6;
+  color: #E5E7EB;
+  border: 1px solid #E5E7EB;
   border-radius: 5px;
-  height: 200px;
-  flex: 1;
+  padding: 10px;
+  font-size: 18px;
+
 }
-.gold{
-  display: flexbox;
-  border: 2px solid black;
-  border-radius: 5px;
-  height: 200px;
-  flex: 1;
-}
-.platinum{
-  display: flexbox;
-  border: 2px solid black;
-  border-radius: 5px;
-  height: 200px;
-  flex: 1;
-}
-.testimonial{
-  display: flexbox;
-  height: 200px;
-  margin: 10px 100px ;
-}
-.testimonial p{
-  padding: 20px;
+.footer {
+  display: flex;
+  background-color: #1F2937;
+  color: #f9faf8;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
 
 }
